@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рекомендации</title>
+    <link rel="stylesheet" href="Musestyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="main-header">
+        <a href="Muse.html" class="musee">Muse</a>
+        <a href="MusePremium.html" class="prem">Muse Premium</a>
+        <a href="recomedationMuse.html" style="color:  #9ACAFF;" class="rec">Рекомендации</a>
+        <p class="prof">Профиль</p>
+    </header>
+    <div class="carousel">
+        <div class="slides">
+
+            <img src="Frame 29203.png" alt="slide image" class="slide">
+            <img src="Frame 29204.png" alt="slide image" class="slide">
+            <img src="Frame 29207.png" alt="slide image" class="slide">
+            <img src="Frame 29208.png" alt="slide image" class="slide">
+            <img src="Frame 29205.png" alt="slide image" class="slide">
+
+
+        </div>
+        <div class="controls">
+            <div class="control prev-slide">&#9668;</div>
+            <div class="control next-slide">&#9658;</div>
+        </div>
+    </div>
+    <p class="dv">Только для вас</p>
+    <div class="imm">
+        <img src="Frame 29194.png" alt="">
+    </div>
+    <p class="mix">your mix of the day</p>
+
+    <div class="imm1">
+        <img src="Play Button.png" alt="">
+    </div>
+    <div class="mix1">
+        <img src="Frame 29210.png" alt="">
+    </div>
+    <div class="mix2">
+        <img src="Frame 29210-1.png" alt="">
+    </div>
+    <div class="mix3">
+        <img src="Frame 29209.png" alt="">
+    </div>
+
+
+    <div class="artist">
+        <div class="artist-container">
+        <div class="artist-img">
+            <img src="sodaluv.jpeg" width="90" height="90" alt="">
+        </div>
+        <p class="name-artist">SODA LUV</p>
+    </div>
+    <div class="artist-container">
+        <div class="artist-img">
+            <img src="ogbuda.jpeg" width="90" height="90" alt="">
+        </div>
+        <p class="name-artist">OG BUDA</p>
+    </div>
+    <div class="artist-container">
+        <div class="artist-img">
+            <img src="morgen.jpg" width="90" height="90" alt="">
+        </div>
+        <p class="name-artist">MORGENSHTERN</p>
+    </div>
+    <div class="artist-container">
+        <div class="artist-img">
+            <img src="molodoiplaton.jpg" width="90" height="90" alt="">
+        </div>
+        <p class="name-artist">Молодой Платон</p>
+    </div>
+    <div class="artist-container">
+        <div class="artist-img">
+            <img src="lov66.jpg" width="90" height="90" alt="">
+        </div>
+        <p class="name-artist">LOV66</p>
+    </div>
+    <div class="artist-container">
+        <div class="artist-img">
+            <img src="lilkrystal.jpg" width="90" height="90" alt="">
+        </div>
+        <p class="name-artist">LIL KRYSTALLL</p>
+    </div>
+    <div class="artist-container">
+        <div class="artist-img">
+            <img src="instasamka.jpg" width="90" height="90" alt="">
+        </div>
+        <p class="name-artist">INSTASAMKA</p>
+    </div>
+    <div class="artist-container">
+        <div class="artist-img">
+            <img src="annaasti 1.png" width="90" height="90" alt="">
+        </div>
+        <p class="name-artist">ANNA ASTI</p>
+    </div>
+    </div>
+
+
+
+    <script>
+        const delay = 5000; //ms
+
+        const slides = document.querySelector(".slides");
+        const slidesCount = slides.childElementCount;
+        const maxLeft = (slidesCount - 1) * 100 * -1;
+
+        let current = 0;
+
+        function changeSlide(next = true) {
+            if (next) {
+                current += current > maxLeft ? -100 : current * -1;
+            } else {
+                current = current < 0 ? current + 100 : maxLeft;
+            }
+
+            slides.style.left = current + "%";
+        }
+
+        let autoChange = setInterval(changeSlide, delay);
+        const restart = function () {
+            clearInterval(autoChange);
+            autoChange = setInterval(changeSlide, delay);
+        };
+
+        // Controls
+        document.querySelector(".next-slide").addEventListener("click", function () {
+            changeSlide();
+            restart();
+        });
+
+        document.querySelector(".prev-slide").addEventListener("click", function () {
+            changeSlide(false);
+            restart();
+        });
+    </script>
+
+</body>
+
+</html>

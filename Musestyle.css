@@ -1,347 +1,430 @@
-header{
-    position: fixed;
-width: 100%;
-height: 49px;
-left: 0px;
-top: 0px;
-background: rgba(0, 0, 0, 0.53);
-backdrop-filter: blur(50px);
-z-index: 900;
+body {
+    overflow-x: hidden;
+    margin: 0px;
+    padding: 0px;
 }
 
-.main{
-    position: absolute;
-    width: 1536px;
-    height: 100%;
-   left: 0px;
+header {
+    position: fixed;
+    width: 100%;
+    height: 49px;
+    left: 0px;
     top: 0px;
-    
-    
+    background: rgba(0, 0, 0, 0.53);
+    backdrop-filter: blur(50px);
+    z-index: 899;
 }
 
-.muse{
+.main-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main {
+    position: absolute;
+    width: 1535px;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+
+
+}
+
+.muse {
     position: fixed;
-width: 61px;
-height: 30px;
-left: 576px;
-top: -15px;
+    width: 61px;
+    height: 30px;
+    left: 576px;
+    top: -17px;
 
-font-family: 'Righteous';
-font-style: normal;
-font-weight: 400;
-font-size: 24.3275px;
-line-height: 30px;
-z-index: 901;
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24.3275px;
+    line-height: 30px;
+    z-index: 901;
 
-
-background: linear-gradient(95.05deg, #D952E6 5.23%, #EC8863 103.78%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
+    background: linear-gradient(95.05deg, #D952E6 5.23%, #EC8863 103.78%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 
 }
 
-.prem{
+.musee {
     position: fixed;
-width: 110px;
-height: 17px;
-left: 656px;
-top: 2px;
-z-index: 902;
-font-family: 'SF Pro Display';
-font-style: normal;
-font-weight: 700;
-font-size: 14.33px;
-line-height: 17px;
+    width: 61px;
+    height: 30px;
+    left: 576px;
+    top: 8px;
 
-color: #FFFFFF;
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24.3275px;
+    line-height: 30px;
+    z-index: 901;
+
+    background: linear-gradient(95.05deg, #D952E6 5.23%, #EC8863 103.78%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
 }
 
-.rec{
+.prem {
+    position: fixed;
+    width: 110px;
+    height: 17px;
+    left: 656px;
+    z-index: 902;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14.33px;
+    line-height: 17px;
+    text-decoration: none;
+
+
+    color: #FFFFFF;
+
+}
+
+.prem:hover {
+    color: #9ACAFF;
+}
+
+
+
+.rec {
     position: fixed;
     width: 104px;
     height: 17px;
     left: 774px;
-    top: 2px;
+
     z-index: 903;
     font-family: 'SF Pro Display';
     font-style: normal;
     font-weight: 700;
     font-size: 14.33px;
     line-height: 17px;
-    
+    text-decoration: none;
+    color: white;
+}
+
+.rec:hover {
+    color: #9ACAFF;
+}
+
+.prof {
+    position: fixed;
+    width: 63px;
+    height: 17px;
+    left: 898px;
+    z-index: 903;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14.33px;
+    line-height: 17px;
+
     color: #FFFFFF;
 }
 
-.prof{
-    position: fixed;
-width: 63px;
-height: 17px;
-left: 898px;
-top: 2px;
-z-index: 903;
-font-family: 'SF Pro Display';
-font-style: normal;
-font-weight: 700;
-font-size: 14.33px;
-line-height: 17px;
-
-color: #FFFFFF;
-}
-
-.cluc{
+.cluc {
     position: absolute;
-width: 250px;
-height: 500px;
-left: 20px;
-top: 0px;
+    width: 250px;
+    height: 500px;
+    left: 20px;
+    top: 0px;
 
-background: url(LETTER_2441.png);
+    background: url(LETTER_2441.png);
 
-    
-    
+
+
 }
-.muse2{
+
+.muse2 {
     position: absolute;
-left: 416px;
-right: 880.77px;
-top: 0px;
-bottom: 640.1px;
+    left: 416px;
+    right: 880.77px;
+    top: 0px;
+    bottom: 640.1px;
 
-font-family: 'Righteous';
-font-style: normal;
-font-weight: 400;
-font-size: 87.7571px;
-line-height: 109px;
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 87.7571px;
+    line-height: 109px;
 
-color: #FFFFFF;
+    color: #FFFFFF;
 
 }
 
-.prem2{
+.prem2 {
     position: absolute;
-left: 416px;
-right: 738px;
-top: 50px;
-bottom: 564.22px;
+    left: 416px;
+    right: 738px;
+    top: 50px;
+    bottom: 564.22px;
 
-font-family: 'Righteous';
-font-style: normal;
-font-weight: 400;
-font-size: 96.758px;
-line-height: 120px;
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 96.758px;
+    line-height: 120px;
 
-color: #FFFFFF;
+    color: #FFFFFF;
 }
 
-.opis{
+.muse4 {
     position: absolute;
-width: 376px;
-height: 60px;
-left: 800px;
-top: 170px;
+    width: 239px;
+    height: 99px;
+    left: 69px;
+    top: 40px;
 
-font-family: 'SF Pro Display';
-font-style: normal;
-font-weight: 700;
-font-size: 15px;
-line-height: 20px;
-/* or 133% */
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 87.7571px;
+    line-height: 109px;
 
-display: flex;
-align-items: flex-end;
-letter-spacing: 0.374px;
-
-color: #FFFFFF;
+    color: #FFFFFF;
 
 }
 
-.instasamka{
+.prem4 {
     position: absolute;
-width: 140px;
-height: 140px;
-left: 1164.84px;
-top: 80px;
+    width: 382px;
+    height: 115px;
+    left: 69px;
+    top: 100px;
 
-background: url(image.png);
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 96.758px;
+    line-height: 120px;
 
+    color: #FFFFFF;
 }
 
-.anna{
+.opis {
     position: absolute;
-width: 130px;
-height: 130px;
-left: 1400px;
-top: 62px;
+    width: 376px;
+    height: 60px;
+    left: 800px;
+    top: 170px;
 
-background: url(image.png), url(image.png);
-}
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    /* or 133% */
 
-.morgen{
-    position: absolute;
-width: 96.34px;
-height: 98.03px;
-left: 1318px;
-top: 165px;
-
-background: url(image.png);
-}
-
-.og{
-    position: absolute;
-width: 98.03px;
-height: 98.03px;
-left: 1240px;
-top: 263px;
-
-background: url(image.png);
-}
-
-.loboda{
-    position: absolute;
-width: 130px;
-height: 130px;
-left: 1385px;
-top: 251px;
-
-background: url(image.png);
-}
-
-.poprob{
     display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 14px 20px;
-gap: 10px;
+    align-items: flex-end;
+    letter-spacing: 0.374px;
 
-font-family: 'SF Pro Display';
-font-style: normal;
-font-weight: 700;
-font-size: 17px;
-line-height: 22px;
-color: #FFFFFF;
-position: absolute;
-width: 516px;
-height: 20px;
-left: 510px;
-top: 260px;
+    color: #FFFFFF;
 
-background: rgba(44, 44, 46, 0.53);
-backdrop-filter: blur(14px);
-/* Note: backdrop-filter has minimal browser support */
-
-border-radius: 14px;
 }
 
-.box{
+.instasamka {
     position: absolute;
-width: 1435px;
-height: 399px;
-left: 51px;
-top: 462px;
+    width: 140px;
+    height: 140px;
+    left: 1164.84px;
+    top: 80px;
 
-background: #F3F3F3;
-border-radius: 33px;
+    background: url(image.png);
+
 }
 
-.pril{
+.anna {
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    left: 1400px;
+    top: 62px;
+
+    background: url(image.png), url(image.png);
+}
+
+.morgen {
+    position: absolute;
+    width: 96.34px;
+    height: 98.03px;
+    left: 1318px;
+    top: 165px;
+
+    background: url(image.png);
+}
+
+.og {
+    position: absolute;
+    width: 98.03px;
+    height: 98.03px;
+    left: 1240px;
+    top: 263px;
+
+    background: url(image.png);
+}
+
+.loboda {
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    left: 1385px;
+    top: 251px;
+
+    background: url(image.png);
+}
+
+.poprob {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 20px;
+    gap: 10px;
+
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 22px;
+    color: #FFFFFF;
+    position: absolute;
+    width: 516px;
+    height: 20px;
+    left: 510px;
+    top: 280px;
+    text-decoration: none;
+
+    background: rgba(44, 44, 46, 0.53);
+    backdrop-filter: blur(14px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 14px;
+}
+
+.poprob:hover {
+    color: #9ACAFF;
+}
+
+.box {
+    position: absolute;
+    width: 1435px;
+    height: 399px;
+    left: 51px;
+    top: 462px;
+
+    background: #F3F3F3;
+    border-radius: 33px;
+}
+
+.pril {
     position: absolute;
     width: 332px;
     height: 72px;
     left: 136px;
     top: 521px;
-    
+
     font-family: 'SF Pro Display';
     font-style: normal;
     font-weight: 700;
     font-size: 55.6364px;
     line-height: 72px;
     /* identical to box height, or 129% */
-    
+
     display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: -1.33527px;
-    
+
     color: #000000;
-    
+
 }
 
-.muse3{
+.muse3 {
     position: absolute;
-width: 203.33px;
-height: 101px;
-left: 478px;
-top: 470px;
+    width: 203.33px;
+    height: 101px;
+    left: 478px;
+    top: 470px;
 
-font-family: 'Righteous';
-font-style: normal;
-font-weight: 400;
-font-size: 81.0916px;
-line-height: 101px;
-/* identical to box height */
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 81.0916px;
+    line-height: 101px;
+    /* identical to box height */
 
 
-background: linear-gradient(95.05deg, #D952E6 5.23%, #EC8863 103.78%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
-text-fill-color: transparent;
+    background: linear-gradient(95.05deg, #D952E6 5.23%, #EC8863 103.78%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
 }
 
-.dos{
+.dos {
     position: absolute;
     width: 700px;
     height: 72px;
     left: 136px;
     top: 577px;
-    
+
     font-family: 'SF Pro Display';
     font-style: normal;
     font-weight: 700;
     font-size: 55.6364px;
     line-height: 72px;
     /* identical to box height, or 129% */
-    
+
     display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: -1.33527px;
-    
-    color: #000000; 
+
+    color: #000000;
 }
 
-.dos2{
+.dos2 {
     position: absolute;
-width: 690px;
-height: 60px;
-left: 136px;
-top: 685px;
+    width: 690px;
+    height: 60px;
+    left: 136px;
+    top: 685px;
 
-font-family: 'SF Pro Display';
-font-style: normal;
-font-weight: 700;
-font-size: 25px;
-line-height: 30px;
-display: flex;
-align-items: flex-end;
-letter-spacing: 0.374px;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: 0.374px;
 
-color: rgba(0, 0, 0, 0.46);
+    color: rgba(0, 0, 0, 0.46);
 
 
 }
 
-.screen{
+.screen {
     position: absolute;
-width: 247px;
-height: 499.78px;
-left: 1026px;
-top: 412px;
+    width: 247px;
+    height: 499.78px;
+    left: 1026px;
+    top: 412px;
 }
 
-.screen2{
+.screen2 {
     position: absolute;
     width: 212.51px;
     height: 430px;
@@ -349,40 +432,379 @@ top: 412px;
     top: 447px;
 }
 
-.app{
+.app {
     position: absolute;
     width: 587px;
     height: 74px;
     left: 128px;
     top: 790px;
-    
+
     background: url(image.png);
     mix-blend-mode: difference;
 }
 
-.frame{
+.frame {
     position: absolute;
-width: 1338px;
-height: 144px;
-left: 99px;
-top: 971px;
+    width: 1338px;
+    height: 144px;
+    left: 99px;
+    top: 971px;
 }
 
-.pop{
+.pop {
     position: absolute;
-width: 329px;
-height: 41px;
-left: calc(50% - 329px/2 - 538.5px);
-top: 900px;
+    width: 329px;
+    height: 41px;
+    left: calc(50% - 329px/2 - 538.5px);
+    top: 900px;
 
-font-family: 'Arial';
-font-style: normal;
-font-weight: 700;
-font-size: 25px;
-line-height: 41px;
-/* identical to box height, or 164% */
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 41px;
+    /* identical to box height, or 164% */
 
-letter-spacing: 0.374px;
+    letter-spacing: 0.374px;
 
-color: rgba(0, 0, 0, 0.78);
+    color: rgba(0, 0, 0, 0.78);
 }
+
+.podval {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100px;
+    left: 0px;
+    top: 1200px;
+    background: #D9D9D9;
+}
+
+.kon {
+    position: absolute;
+    width: 235px;
+    height: 41px;
+    left: 651px;
+    top: 1211px;
+
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 41px;
+    /* identical to box height, or 186% */
+
+    letter-spacing: 0.374px;
+
+    color: rgba(0, 0, 0, 0.43);
+}
+
+.sb {
+    position: absolute;
+    width: 198px;
+    height: 28px;
+    left: 568px;
+    top: 1246px;
+
+    font-family: 'Magneto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23.46px;
+    line-height: 28px;
+
+    color: rgba(0, 0, 0, 0.42);
+}
+
+.kh {
+    position: absolute;
+    width: 96px;
+    height: 32px;
+    left: calc(50% - 96px/2 + 66px);
+    top: 1239px;
+
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 32px;
+
+    color: rgba(0, 0, 0, 0.43);
+}
+
+.mu {
+    position: absolute;
+    left: 890px;
+    right: 567px;
+    top: 1238px;
+    bottom: 23px;
+
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 32px;
+
+    color: rgba(0, 0, 0, 0.42);
+}
+
+.ten {
+    position: absolute;
+    width: 1321px;
+    height: 1114px;
+    left: 594px;
+    top: -49px;
+
+    background: radial-gradient(42.22% 49.39% at 50% 43.92%, #FF0FD9 0%,
+            rgba(112, 26, 114, 0) 100%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    ;
+
+}
+
+.ret {
+    position: absolute;
+    width: 1321px;
+    height: 1114px;
+    left: 535px;
+    top: -27px;
+    z-index: -1;
+}
+
+.iPhone {
+    position: absolute;
+    width: 284.69px;
+    height: 731.54px;
+    left: 1000px;
+    top: 75px;
+    transform: rotate(0deg);
+}
+
+.str {
+    position: absolute;
+    width: 696px;
+    height: 99px;
+    left: 69px;
+    top: 329px;
+
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: 0.374px;
+
+    color: #FFFFFF;
+}
+
+.gr {
+    position: absolute;
+    width: 602px;
+    height: 387.51px;
+    left: 54px;
+    top: 500px;
+}
+
+.butt {
+
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26.86px;
+    line-height: 35px;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 22.12px 31.6px;
+    gap: 15.8px;
+
+    position: absolute;
+    width: 610px;
+    height: 25px;
+    left: 33px;
+    top: 846px;
+
+    background: linear-gradient(90deg, #9381EB 7.36%, #D251E4 33.86%, #EC9F73 62.24%, #EE8D68 78.01%, #EDD49F 92.79%);
+    backdrop-filter: blur(22.12px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 22.12px;
+}
+
+.carousel {
+    width: 100%;
+    height: 370px;
+    margin: 0px;
+    margin-top: 3%;
+    border-radius: 3px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.carousel:hover .controls {
+    opacity: 1;
+}
+
+.carousel .controls {
+    opacity: 0;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 99999;
+    transition: all ease 0.5s;
+}
+
+.carousel .controls .control {
+    margin: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.7);
+    opacity: 0.5;
+    transition: ease 0.3s;
+    cursor: pointer;
+}
+
+.carousel .controls .control:hover {
+    opacity: 1;
+}
+
+.carousel .slides {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    width: 100%;
+    transition: 1s ease-in-out all;
+}
+
+.carousel .slides .slide {
+    min-width: 100%;
+    min-height: 250px;
+    height: auto;
+}
+
+.dv {
+    position: absolute;
+    width: 558.33px;
+    height: 67px;
+    left: calc(50% - 558.33px/2 - 454.81px);
+    top: 400px;
+
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 67px;
+    /* identical to box height, or 164% */
+
+    letter-spacing: 0.608789px;
+
+    color: rgba(0, 0, 0, 0.78);
+}
+
+.imm {
+    position: absolute;
+    overflow: hidden;
+    width: 527.54px;
+    height: 288.68px;
+    left: 26px;
+    top: 508px;
+
+    border-radius: 33px;
+}
+
+.mix {
+    position: absolute;
+    width: 310px;
+    height: 72px;
+    left: 49px;
+    top: 540px;
+
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 57.744px;
+    line-height: 59px;
+    /* or 102% */
+
+
+    color: #FFFFFF;
+}
+
+.imm1 {
+    position: absolute;
+    width: 105.51px;
+    height: 105.51px;
+    left: 399.12px;
+top: 660.64px;
+
+}
+
+.mix1{
+    position: absolute;
+    width: 288.68px;
+    height: 288.68px;
+    left: 584.15px;
+    top: 508px;
+}
+
+.mix2{
+    position: absolute;
+    width: 288.68px;
+    height: 288.68px;
+    left: 903.73px;
+    top: 508px; 
+}
+
+.mix3{
+    position: absolute;
+width: 288.68px;
+height: 288.68px;
+left: 1223.32px;
+top: 508px;
+}
+
+.artist{
+    margin-top: 30%;
+    width: 100%;
+    margin-left: -50px;
+    height: 100px;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.artist-img{
+    overflow: hidden;
+    height: 90px;
+    margin-left: 40%;
+    width: 90px;
+    border-radius: 150px;
+    background-color: #9ACAFF;
+    text-align: center;
+    
+   
+}
+
+.name-artist{
+    margin-left: 70px;
+    font-family: 'Arial';
+    font-style: normal;
+  
+    
+}
+
